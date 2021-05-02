@@ -115,7 +115,6 @@ Sub VBA_Challenge():
             Next i
             ws.Range("Q2").NumberFormat = "0.00%"
             ws.Range("Q3").NumberFormat = "0.00%"
-            
       
     Next ws
 
