@@ -14,7 +14,7 @@ Sub VBA_Challenge():
         ws.Range("P1").Value = "Ticker"
         ws.Range("Q1").Value = "Value"
 
-        ' Setting initial variables and baseline variables
+        ' Setting variables
         Dim TickerName As String
         Dim LastRow As Long
         Dim TotalTickerVolume As Double
@@ -113,13 +113,10 @@ Sub VBA_Challenge():
                 End If
 
             Next i
-        ' Formatting Double To Include % Symbol And Two Decimal Places
             ws.Range("Q2").NumberFormat = "0.00%"
             ws.Range("Q3").NumberFormat = "0.00%"
             
-        ' Formatting Table Columns To Auto Fit
-        'ws.Columns("I:Q").AutoFit
-
+      
     Next ws
 
 End Sub
